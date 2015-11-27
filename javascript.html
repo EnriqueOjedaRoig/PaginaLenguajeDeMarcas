@@ -4,49 +4,115 @@
 <head>
 <meta charset="utf-8" />
 <title>Aprendiendo Menus con HTML5</title>
-<link href="estilo.css" rel="stylesheet" type="text/css">
 <meta name="generator" content="Geany 1.25" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link href="estilo.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<div id="header">
 	
-		<ul class="nav">
-		<!--	<h5><img src="html5_android_warrior_by_richtaur-d49g6vf.png" alt="Armas Celestiales" /> 
-          </h5> -->
-			<li><a>Inicio</a>
-				<ul>
-						<li><a href="index.html" >Inicio</a></li>
-						<li><a href="">Submenu1</a></li>
+	<div id="cabecera">
+		
+		
+		<h1><img class="imagen" src="html5_android_warrior_by_richtaur-d49g6vf.png" /> Manuales de distintos lenguajes de marcas<img class="imagen" src="html5_android_warrior_by_richtaur-d49g6vf.png" /></h1>
+	</div>
+	
+	<div id="menu">
+	<nav class="navbar navbar-default">
+	    <div class="navbar-header">
+				 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>	      
+	      </div>
+	    
+	    <div class="collapse navbar-collapse navbar-ex1-collapse" >
+	
+	
+	
+		<ul class="nav navbar-nav">
+			<li class="dropdown"><a class="dropsown-toggle" data-toggle="dropdown">Inicio</a>
+				<ul class="dropdown-menu">
+						<li><a href="index.html" > Inicio</a></li>
 				</ul>
 			</li>
 				
-			<li><a>HTML5 </a> 
-				<ul>
+			<li class="dropdown"><a class="dropsown-toggle" data-toggle="dropdown">HTML5 </a> 
+				<ul class="dropdown-menu">
 						<li> <a href="html5.html" >Enlace a HTML5</a>
 						<li><a href="http://www.w3schools.com/html/">Enlace a la pagina de 3wschool</a></li>	
 				</ul>
 			</li>
-			<li> <a>CSS3</a>
-				<ul>
+			<li class="dropdown"> <a class="dropsown-toggle" data-toggle="dropdown">CSS3</a>
+				<ul class="dropdown-menu">
 						<li><a href="css3.html" >CSS3</a></li>
-						<li><a href="">Submenu1</a></li>
+						<li><a href="http://www.w3schools.com/css/">Enlace a la pagina de 3wschool</a></li>
 				</ul>
 			</li>
-			<li><a> JavaScript</a> 
-				<ul>
+			<li class="dropdown"><a class="dropsown-toggle" data-toggle="dropdown"> JavaScript</a> 
+				<ul class="dropdown-menu">
 						<li><a href="javascript.html" >JavaScript</a></li>
-						<li><a href="">Submenu1</a></li>
+						<li><a href="http://www.w3schools.com/js/">Enlace a la pagina de 3wschool</a></li>
 				</ul>
 			</li>
-			<li> <a> Bootstrap</a> 
-				<ul>
+			<li class="dropdown"> <a class="dropsown-toggle" data-toggle="dropdown"> Bootstrap</a> 
+				<ul class="dropdown-menu">
 						<li><a href="bootstrap.html" >Bootstrap</a></li>
-						<li><a href="">Submenu1</a></li>
+						<li><a href="http://www.w3schools.com/bootstrap/">Enlace a la pagina de 3wschool</a></li>
+				</ul>
+			</li>
+			<li class="dropdown"><a class="dropsown-toggle" data-toggle="dropdown">Participantes</a>
+				<ul class="dropdown-menu">
+						<li><a href="participantes.html" > Participantes</a></li>
 				</ul>
 			</li>
 		</ul>
+		</div>
+	</nav>
 	</div>
+	
+	<div id="cuerpo"><center><h1>Introduccion</h1></center>
+		<blockquote>
+		<h2>Estructura de los documentos html</h2>
+		<p>&lt;html&gt; principio de documento</p>
+
+        <p>&lt;head&gt;  principio de cabecera </p>
+
+        <p>&lt;title&gt;título&lt;/title&gt;</p>
+
+ ...
+
+        <p>&lt;/head&gt; fin de cabecera </p>
+
+        <p>&lt;body&gt; principio de cuerpo </p>
+
+ ....
+
+        <p>&lt;/body&gt; fin del  cuerpo </p>
+
+        <p>&lt;/html&gt;</p>
+		<h2>Etiquetas</h2>
+		<p>Todas las etiquetas en HTML están encerradas entre los símbolos “&lt;” y “&gt;”. Se 
+           cierran con el nombre de la etiqueta precedido con el símbolo “/”. Las etiquetas 
+           afectan al código delimitado por la apertura y el cierre de la etiqueta.
+           </p>
+         <h2>Atributos</h2>
+         <p>Muchas etiquetas tienen atributos, los cuales modifican el funcionamiento de la 
+         misma. Estos se ponen de esta forma: </br>
+         &lt;etiqueta atributo1=”valor1” atributo2=”valor2” ...&gt; 
+         &lt;/etiqueta&gt;
+
+....</p> 
+
+	</blockquote>
+</div>
 </body>
 
 </html>
